@@ -36,4 +36,3 @@ switch (true)
     case (age > 17): console.log(vorname + " darf Wein trinken.");break;
     default: console.log("wOOt?!?");break;
 };
-
