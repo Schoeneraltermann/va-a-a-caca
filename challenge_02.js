@@ -14,4 +14,26 @@ Alter 13-17 // Cola
 
 */
 
+let vorname = prompt("Bitte geben Sie Ihren Vornamen ein:");
+
+while (isNaN(vorname) == false)
+ {
+    vorname = prompt("Bitte geben Sie Ihren Vornamen ein")
+}
+
+let age = parseInt(prompt("Bitte geben Sie Ihr alter ein:"));
+
+while (isNaN(age) || age >= 130)
+ {
+    age = prompt("Bitte geben Sie ein valides Alter ein")
+}
+
+switch (true) 
+{
+    case (age >=0 && age <=5): console.log(vorname + " darf Milch trinken.");break;
+    case (age >=6 && age <=12): console.log(vorname +" darf Saft trinken.");break;
+    case (age >=13 && age <=17): console.log(vorname + "d arf Cola trinken.");break;
+    case (age > 17): console.log(vorname + " darf Wein trinken.");break;
+    default: console.log("wOOt?!?");break;
+};
 
